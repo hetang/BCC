@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:typeface="monospace"
+	    >
+		<TextView 	android:id="@+id/pageContent" 
+	    			android:layout_width="wrap_content" 
+	    			android:layout_height="wrap_content"
+	    			android:text="@string/about_bcc_content"
+	    			android:textColor="#ffffff" 			
+	    			android:paddingTop="20dip"
+	    			android:paddingBottom="5dip"
+	    			android:paddingLeft="5dip"
+	    			android:paddingRight="5dip"       			
+        			android:gravity="center_vertical|center_horizontal"/>
+        <TableLayout 
+        			android:layout_below="@+id/heading" 
+        			android:id="@+id/tableLayout1" 
+        			android:layout_width="fill_parent" 
+        			android:layout_marginTop="10dip"
+        			android:layout_marginLeft="10dip"
+        			android:layout_marginRight="10dip"       			
+        			android:layout_height="fill_parent" 
+        			android:layout_centerInParent="true" 
+        			android:gravity="center" 
+        			android:stretchColumns="0">
+        	<TableRow android:id="@+id/tableRow1" android:layout_width="fill_parent" android:layout_height="wrap_content">		        
+		        <Button 	android:text="@string/import_contacts" 
+	            			android:layout_width="fill_parent" 
+	            			android:id="@+id/import_button" 
+	            			android:layout_height="wrap_content"
+	            			android:gravity="center_vertical|center_horizontal"
+	            			android:textStyle="bold"> 
+	            </Button>
+		    </TableRow>
+		    <TableRow android:id="@+id/tableRow2" android:layout_width="fill_parent" android:layout_height="wrap_content">		        
+		        <Button 	android:text="@string/export_contacts" 
+	            			android:layout_width="fill_parent" 
+	            			android:id="@+id/export_button" 
+	            			android:layout_height="wrap_content"
+	            			android:gravity="center_vertical|center_horizontal"
+	            			android:textStyle="bold"> 
+	            </Button>
+		    </TableRow>
+		    <TableRow android:id="@+id/tableRow3" android:layout_width="fill_parent" android:layout_height="wrap_content">		        
+		        <Button 	android:text="@string/manage_ie_contacts" 
+	            			android:layout_width="fill_parent" 
+	            			android:id="@+id/manage_ie_button" 
+	            			android:layout_height="wrap_content"
+	            			android:gravity="center_vertical|center_horizontal"
+	            			android:textStyle="bold"> 
+	            </Button>
+		    </TableRow>
+        </TableLayout>
+	</LinearLayout>
+</ScrollView>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:title="@string/ocr_services">
+	    <CheckBoxPreference
+   			android:key="create_contact"
+   			android:title="Create Contact"
+   			android:summary="Do you like to Create cotact in your phone?"
+   			android:defaultValue="true"/>
+	    <CheckBoxPreference
+   			android:key="overwrite_contact"
+   			android:title="Overwrite Duplicate Contact"
+   			android:summary="Would you like to overwrite duplicate contact?"
+   			android:defaultValue="true"
+   			android:dependency="create_contact" />
+		<CheckBoxPreference
+   			android:key="@string/save_photo_key"
+   			android:title="@string/save_photo_title"
+   			android:summary="@string/save_photo_desc"
+   			android:defaultValue="true"/>
+   		<CheckBoxPreference
+   			android:key="@string/save_default_account_key"
+   			android:title="@string/save_default_account_title"
+   			android:summary="@string/save_default_account_desc"
+   			android:defaultValue="true"/>
+   		<ListPreference
+    		android:key="preferences_download_language"
+    		android:title="@string/preferences_download_language"/>
+   		<ListPreference
+    		android:key="preferences_set_OCR_language"
+    		android:title="@string/preferences_set_OCR_language"/>
+   		<ListPreference
+    		android:key="preferences_speed_quality"
+    		android:title="@string/preferences_speed_quality"/>
+   	</PreferenceCategory>
+   	<PreferenceCategory android:title="@string/export_services">
+   		<ListPreference
+			android:key="file_format"
+			android:title="Export File Type"
+			android:summary="Define the type of file to Export"
+			android:defaultValue="CSV"
+			android:entries="@array/fileFormat"
+			android:entryValues="@array/fileFormatCodes"/>
+   		<ListPreference
+			android:key="csv_file_format"
+			android:title="CSV File Type"
+			android:summary="Define the type of CSV file to Export"
+			android:defaultValue="Default"
+			android:entries="@array/csvfileFormat"
+			android:entryValues="@array/csvfileFormatCodes"/>
+   		<CheckBoxPreference
+   			android:key="save_to_sd_card"
+   			android:title="Save to SD Card"
+   			android:summary="Do we need to store exported file to sd card?"
+   			android:defaultValue="true"/>
+   		<EditTextPreference
+                android:name="file_name"
+                android:summary="Change Intial Name of the Export File."
+                android:defaultValue="export_file_"
+                android:title="File Name"
+                android:key="change_file_name" />
+	</PreferenceCategory>
+</PreferenceScreen>

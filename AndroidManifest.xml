@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.bcc"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="7" />
+
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:debuggable="true">
+        <activity android:name=".BCCActivity"
+                  android:label="@string/app_name"
+                  android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		<activity android:label="AddBCC" android:name=".AddBCC" android:screenOrientation="portrait" android:configChanges="orientation|keyboardHidden" android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity android:label="AddBCCManage" android:name=".AddBCCManage" android:screenOrientation="portrait" android:configChanges="orientation|keyboardHidden" android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity android:label="ImportExportBCC" android:name=".ImportExportBCC" android:screenOrientation="portrait" android:configChanges="orientation|keyboardHidden" android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity android:label="ImportExportManage" android:name=".ImportExportManage" android:screenOrientation="portrait" android:configChanges="orientation|keyboardHidden" android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity android:label="SetPrefs" android:name=".SetPrefs" android:screenOrientation="portrait" android:configChanges="orientation|keyboardHidden" android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity android:label="OCRResult" android:name=".OCRResult" android:screenOrientation="portrait" android:configChanges="orientation|keyboardHidden" android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		
+		    
+		<activity android:name="com.itwizard.mezzofanti.Mezzofanti"
+                  android:screenOrientation="landscape"
+              	  android:configChanges="orientation|keyboardHidden"
+              	  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">      
+        </activity>
+        <activity android:name="com.itwizard.mezzofanti.InstallActivity"
+              android:label="@string/installactivity_name">
+    	</activity>
+        <!-- <activity android:name="ResultsActivity"
+                  android:configChanges="orientation|keyboardHidden"
+                  android:label="@string/resultsactivity_name">
+        </activity>  
+        <activity android:name="TranslateActivity"
+              android:label="@string/translateactivity_name"                  
+              android:screenOrientation="landscape"
+              android:configChanges="orientation|keyboardHidden"
+              android:theme="@android:style/Theme.NoTitleBar.Fullscreen"> 
+    	</activity> -->
+    </application>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+	<uses-permission android:name="android.permission.CAMERA"/>
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.READ_CONTACTS"/>
+	<uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+</manifest>

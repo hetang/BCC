@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FileStoreInfos>
+	<FileStore>
+		<Name>CSV File Data Store</Name>
+		<Type>CSV</Type>
+		<ClassName>com.sdsu.bcc.file.impl.CSVDataStore</ClassName>
+	</FileStore>
+</FileStoreInfos>

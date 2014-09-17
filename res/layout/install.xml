@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent">
+
+
+		 <LinearLayout
+				android:id="@+id/installactivity_ProgressBarLayout" 
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true"
+				android:orientation="vertical"
+				>
+				
+				<TextView
+					android:id="@+id/installactivity_status_text"
+		    		android:layout_width="fill_parent"
+		    		android:layout_height="wrap_content"
+					android:paddingLeft="5px"
+					android:paddingRight="5px"
+					android:paddingTop="5px"
+					android:paddingBottom="5px"
+					android:text="Installing"
+		    		>
+				</TextView>
+				<ProgressBar
+					android:id="@+id/installactivity_progressbar"
+					android:layout_width="fill_parent" 
+					android:layout_height="wrap_content"
+					style="?android:attr/progressBarStyleHorizontal"
+					android:paddingLeft="5px"
+					android:paddingRight="5px"
+					android:paddingTop="5px"
+					android:paddingBottom="5px"
+					>
+				</ProgressBar>
+		 </LinearLayout>
+</RelativeLayout>
